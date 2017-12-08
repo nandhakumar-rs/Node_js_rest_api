@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/db.js"],"names":["db","connect","callback"],"mappings":";;;;;;AAAA;;;;;;kBAEe,oBAAY;AACzB,MAAIA,KAAK,mBAASC,OAAT,CAAiB,oCAAjB,CAAT;AACAC,WAASF,EAAT;AACD,C","file":"db.js","sourcesContent":["import mongoose from 'mongoose';\n\nexport default callback => {\n  let db = mongoose.connect('mongodb://localhost:27017/accounts');\n  callback(db);\n}\n"]}
